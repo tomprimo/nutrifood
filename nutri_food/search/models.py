@@ -3,11 +3,11 @@ from django.db import models
 
 
 class Product(models.Model):
-    ingredients = models.CharField(max_length=200)
-    nutri_score = models.CharField(max_length=1)
-    name = models.CharField(max_length=25)
-    brand = models.CharField(max_length=25)
-    category = models.CharField(max_length=25)
+    ingredients = models.CharField(max_length=2000000,null=True)
+    nutri_score = models.CharField(max_length=2000000,null=True)
+    name = models.CharField(max_length=250000,null=True)
+    brand = models.CharField(max_length=250000,null=True)
+    category = models.CharField(max_length=250000,null=True)
     
 class User(models.Model):
     first_name = models.CharField(max_length=200)
